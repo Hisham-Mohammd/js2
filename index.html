@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- .............. -->
+    <div class=" d-flex justify-content-center pt-5 mb-5 ">
+        <div class=" text1  pt-5">
+            <h1>Bookmarker </h1>
+        </div>
+    </div>
+
+    <!-- .................................. -->
+    <div class=" todet container pt-3">
+        <div class=" text2 d-flex justify-content-center pt-5">
+            <i class="fa-solid fa-bookmark fa-2x pt-1 pe-3" style="color: #3ca55c;"></i>
+            <h2>Bookmark your favorite sites</h2>
+            <i class="fa-solid fa-bookmark fa-2x pt-2 ps-3" style="color: #b5ac49;"></i>
+
+
+        </div>
+
+        <div class=" rem1 d-flex position-relative justify-content-center  ">
+            <div id="pup"  class=" desin position-absolute  ">
+                <div  class=  "  d-flex justify-content-end">
+                    <button  onclick="rem()" class="btn-close "></button>
+
+                </div>
+                <div class="">
+                    <i class="fa-solid fa-circle fa-1x " style="color: rgba(255, 0, 0, 0.959); font-size: 22px;" ></i>
+                    <i class="fa-solid fa-circle fa-1x" style="color: rgba(255, 255, 0, 0.74); font-size: 22px;"></i>
+                    <i class="fa-solid fa-circle" style="color: rgba(0, 128, 0, 0.849); font-size: 22px; " ></i>
+                </div>
+                <div class="container pt-4">
+                    <h4>Site Name or Url is not valid, Please follow the rules below : </h4>
+                </div>
+                <div class="container d-flex pt-2">
+                    <i class="fa-regular fa-circle-right me-3 pt-3 " style="font-size: 20px;" ></i>
+                    <p class="pt-3 h6 " style="font-size: 20px" >Site name must contain at least 3 characters</p>
+                
+                </div>
+            
+                <div class="container d-flex pt-2">
+                    <i class="fa-regular fa-circle-right me-3 pt-3 " style="font-size: 20px;" ></i>
+                    <p class="pt-3 h6" style="font-size: 20px;">Site URL must be a valid one</p>
+                
+                </div>
+            
+        
+            </div>
+        
+        
+        
+        </div>
+        
+
+        <div class="pt-5">
+            <label for="Bookmark Name" class="pb-2 fw-semibold">
+                <i class="fa-solid fa-book-bookmark pe-2"></i>
+                Site Name
+            </label>
+
+            <input type="text" placeholder="Bookmark Name" class="form-control" id="Bookmark Name">
+
+        </div>
+
+        <div class="pt-5">
+            <label for="WebsiteURL" class="pb-2 fw-semibold">
+                <i class="fa-solid fa-link pe-2"></i>
+                Site URL
+            </label>
+
+            <input type="text" placeholder="Bookmark Name" class="form-control" id="WebsiteURL">
+
+        </div>
+
+        <div class=" btr d-flex justify-content-center pt-4 mb-4">
+            <button class="border-0  pe-5 ps-5 pt-2 pb-2" onclick="text()">Submit</button>
+        </div>
+
+    </div>
+    <div class=" container p-5">
+        <table class="table"  id="table">
+            <thead>
+                <th>Index</th>
+                <th>Wbsite Name</th>
+                <th>Visit</th>
+                <th>Delet</th>
+            </thead>
+            <tbody id ='tbody' >
+                
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/js.js"></script>
+
+
+
+</body>
+
+</html>

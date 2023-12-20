@@ -1,0 +1,64 @@
+
+.text1 {
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    color: #352E28;
+   position: relative;
+   width: 30%;
+}
+.text1::before{
+    content: "";
+    position: absolute;
+    width: 35vh;
+    height: 20%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+z-index:-1 ;
+transition: 0.5s;
+}
+.text1:hover::before {
+height: 30%;
+}
+.text2  {
+    background-image:linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+
+}
+.btr button{
+    background: rgba(187, 66, 32, 0.767);
+    border-radius: 10px;
+}
+.btr button:hover{
+    background: rgb(187, 66, 32);
+
+}
+.todet{
+    border-top: dotted;
+    border-bottom: dotted;
+}
+.pirnt .child img{
+    width: 60%;
+    height: 20vh;
+}
+.child{
+    display: flex;
+}
+.desin{
+     width: 50%;
+     height: 40vh;
+     background-color: #f8f9fa;
+     opacity: 0;
+     
+    
+     
+}
+.open-pup{
+    opacity: 1;
+}
+.clos-pu{
+    opacity: 0;
+}
+
+
