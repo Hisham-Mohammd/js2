@@ -49,13 +49,20 @@ height: 30%;
      width: 50%;
      height: 40vh;
      background-color: #f8f9fa;
-     opacity: 0;
+    visibility: hidden;
+     transform: rotateY('30px');
+     transition: transform 0.4s , top 0.4s ;
+     transition: 1s;
+     transform: scale(0) ;
      
     
      
 }
 .open-pup{
-    opacity: 1;
+   visibility: visible;
+    top: 50%;
+    transform:translate(10% ,0%) scale(1) ;
+    transform: scale(1.0) rotate(360deg);
 }
 .clos-pu{
     opacity: 0;
